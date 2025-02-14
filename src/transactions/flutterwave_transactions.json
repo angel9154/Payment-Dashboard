@@ -4,873 +4,873 @@
         "customer_name": "Customer 1",
         "amount": 1050.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-02"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1002",
         "customer_name": "Customer 2",
         "amount": 1101.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-03"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1003",
         "customer_name": "Customer 3",
         "amount": 1151.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-04"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1004",
         "customer_name": "Customer 4",
         "amount": 1202.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-05"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1005",
         "customer_name": "Customer 5",
         "amount": 1252.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-06"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1006",
         "customer_name": "Customer 6",
         "amount": 1303.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-07"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1007",
         "customer_name": "Customer 7",
         "amount": 1353.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-08"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1008",
         "customer_name": "Customer 8",
         "amount": 1404.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-09"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1009",
         "customer_name": "Customer 9",
         "amount": 1454.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-10"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1010",
         "customer_name": "Customer 10",
         "amount": 1505.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-11"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1011",
         "customer_name": "Customer 11",
         "amount": 1555.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-12"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1012",
         "customer_name": "Customer 12",
         "amount": 1606.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-13"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1013",
         "customer_name": "Customer 13",
         "amount": 1656.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-14"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1014",
         "customer_name": "Customer 14",
         "amount": 1707.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-15"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1015",
         "customer_name": "Customer 15",
         "amount": 1757.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-16"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1016",
         "customer_name": "Customer 16",
         "amount": 1808.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-17"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1017",
         "customer_name": "Customer 17",
         "amount": 1858.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-18"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1018",
         "customer_name": "Customer 18",
         "amount": 1909.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-19"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1019",
         "customer_name": "Customer 19",
         "amount": 1959.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-20"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1020",
         "customer_name": "Customer 20",
         "amount": 2010.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-21"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1021",
         "customer_name": "Customer 21",
         "amount": 2060.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-22"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1022",
         "customer_name": "Customer 22",
         "amount": 2111.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-23"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1023",
         "customer_name": "Customer 23",
         "amount": 2161.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-24"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1024",
         "customer_name": "Customer 24",
         "amount": 2212.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-25"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1025",
         "customer_name": "Customer 25",
         "amount": 2262.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-26"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1026",
         "customer_name": "Customer 26",
         "amount": 2313.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-27"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1027",
         "customer_name": "Customer 27",
         "amount": 2363.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-28"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1028",
         "customer_name": "Customer 28",
         "amount": 2414.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-29"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1029",
         "customer_name": "Customer 29",
         "amount": 2464.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-30"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1030",
         "customer_name": "Customer 30",
         "amount": 2515.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-01"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1031",
         "customer_name": "Customer 31",
         "amount": 2565.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-02"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1032",
         "customer_name": "Customer 32",
         "amount": 2616.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-03"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1033",
         "customer_name": "Customer 33",
         "amount": 2666.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-04"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1034",
         "customer_name": "Customer 34",
         "amount": 2717.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-05"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1035",
         "customer_name": "Customer 35",
         "amount": 2767.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-06"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1036",
         "customer_name": "Customer 36",
         "amount": 2818.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-07"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1037",
         "customer_name": "Customer 37",
         "amount": 2868.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-08"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1038",
         "customer_name": "Customer 38",
         "amount": 2919.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-09"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1039",
         "customer_name": "Customer 39",
         "amount": 2969.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-10"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1040",
         "customer_name": "Customer 40",
         "amount": 3020.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-11"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1041",
         "customer_name": "Customer 41",
         "amount": 3070.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-12"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1042",
         "customer_name": "Customer 42",
         "amount": 3121.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-13"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1043",
         "customer_name": "Customer 43",
         "amount": 3171.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-14"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1044",
         "customer_name": "Customer 44",
         "amount": 3222.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-15"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1045",
         "customer_name": "Customer 45",
         "amount": 3272.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-16"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1046",
         "customer_name": "Customer 46",
         "amount": 3323.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-17"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1047",
         "customer_name": "Customer 47",
         "amount": 3373.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-18"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1048",
         "customer_name": "Customer 48",
         "amount": 3424.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-19"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1049",
         "customer_name": "Customer 49",
         "amount": 3474.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-20"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1050",
         "customer_name": "Customer 50",
         "amount": 3525.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-21"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1051",
         "customer_name": "Customer 51",
         "amount": 3575.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-22"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1052",
         "customer_name": "Customer 52",
         "amount": 3626.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-23"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1053",
         "customer_name": "Customer 53",
         "amount": 3676.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-24"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1054",
         "customer_name": "Customer 54",
         "amount": 3727.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-25"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1055",
         "customer_name": "Customer 55",
         "amount": 3777.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-26"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1056",
         "customer_name": "Customer 56",
         "amount": 3828.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-27"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1057",
         "customer_name": "Customer 57",
         "amount": 3878.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-28"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1058",
         "customer_name": "Customer 58",
         "amount": 3929.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-29"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1059",
         "customer_name": "Customer 59",
         "amount": 3979.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-30"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1060",
         "customer_name": "Customer 60",
         "amount": 4030.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-01"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1061",
         "customer_name": "Customer 61",
         "amount": 4080.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-02"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1062",
         "customer_name": "Customer 62",
         "amount": 4131.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-03"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1063",
         "customer_name": "Customer 63",
         "amount": 4181.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-04"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1064",
         "customer_name": "Customer 64",
         "amount": 4232.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-05"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1065",
         "customer_name": "Customer 65",
         "amount": 4282.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-06"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1066",
         "customer_name": "Customer 66",
         "amount": 4333.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-07"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1067",
         "customer_name": "Customer 67",
         "amount": 4383.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-08"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1068",
         "customer_name": "Customer 68",
         "amount": 4434.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-09"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1069",
         "customer_name": "Customer 69",
         "amount": 4484.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-10"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1070",
         "customer_name": "Customer 70",
         "amount": 4535.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-11"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1071",
         "customer_name": "Customer 71",
         "amount": 4585.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-12"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1072",
         "customer_name": "Customer 72",
         "amount": 4636.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-13"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1073",
         "customer_name": "Customer 73",
         "amount": 4686.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-14"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1074",
         "customer_name": "Customer 74",
         "amount": 4737.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-15"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1075",
         "customer_name": "Customer 75",
         "amount": 4787.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-16"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1076",
         "customer_name": "Customer 76",
         "amount": 4838.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-17"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1077",
         "customer_name": "Customer 77",
         "amount": 4888.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-18"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1078",
         "customer_name": "Customer 78",
         "amount": 4939.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-19"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1079",
         "customer_name": "Customer 79",
         "amount": 4989.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-20"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1080",
         "customer_name": "Customer 80",
         "amount": 5040.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-21"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1081",
         "customer_name": "Customer 81",
         "amount": 5090.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-22"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1082",
         "customer_name": "Customer 82",
         "amount": 5141.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-23"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1083",
         "customer_name": "Customer 83",
         "amount": 5191.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-24"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1084",
         "customer_name": "Customer 84",
         "amount": 5242.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-25"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1085",
         "customer_name": "Customer 85",
         "amount": 5292.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-26"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1086",
         "customer_name": "Customer 86",
         "amount": 5343.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-27"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1087",
         "customer_name": "Customer 87",
         "amount": 5393.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-28"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1088",
         "customer_name": "Customer 88",
         "amount": 5444.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-29"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1089",
         "customer_name": "Customer 89",
         "amount": 5494.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-30"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1090",
         "customer_name": "Customer 90",
         "amount": 5545.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-01"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1091",
         "customer_name": "Customer 91",
         "amount": 5595.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-02"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1092",
         "customer_name": "Customer 92",
         "amount": 5646.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-03"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1093",
         "customer_name": "Customer 93",
         "amount": 5696.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-04"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1094",
         "customer_name": "Customer 94",
         "amount": 5747.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-05"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1095",
         "customer_name": "Customer 95",
         "amount": 5797.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-06"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1096",
         "customer_name": "Customer 96",
         "amount": 5848.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-07"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1097",
         "customer_name": "Customer 97",
         "amount": 5898.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-08"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1098",
         "customer_name": "Customer 98",
         "amount": 5949.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-09"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1099",
         "customer_name": "Customer 99",
         "amount": 5999.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-10"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1100",
         "customer_name": "Customer 100",
         "amount": 6050.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-11"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1101",
         "customer_name": "Customer 101",
         "amount": 6100.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-12"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1102",
         "customer_name": "Customer 102",
         "amount": 6151.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-13"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1103",
         "customer_name": "Customer 103",
         "amount": 6201.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-14"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1104",
         "customer_name": "Customer 104",
         "amount": 6252.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-15"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1105",
         "customer_name": "Customer 105",
         "amount": 6302.5,
         "status": "Failed",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-16"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1106",
         "customer_name": "Customer 106",
         "amount": 6353.0,
         "status": "Success",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-17"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1107",
         "customer_name": "Customer 107",
         "amount": 6403.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-18"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1108",
         "customer_name": "Customer 108",
         "amount": 6454.0,
         "status": "Failed",
-        "payment_method": "Card",
+        "payment_method": "Cash",
         "date": "2024-06-19"
-    },
-    {
+      },
+      {
         "transaction_id": "TXN1109",
         "customer_name": "Customer 109",
         "amount": 6504.5,
         "status": "Success",
-        "payment_method": "Bank Transfer",
+        "payment_method": "Cash",
         "date": "2024-06-20"
-    },
+      },
     {
         "transaction_id": "TXN1110",
         "customer_name": "Customer 110",

@@ -76,37 +76,38 @@ export function TransactionTable({ transactions }: TransactionTableProps) {
             </div>
             
             <select
-              className="p-2 border border-gray-200 rounded-lg"
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as 'date' | 'amount' | 'payment')}
-            >
-              <option value="date">Sort by Date</option>
-              <option value="amount">Sort by Amount</option>
-              <option value="payment">Sort by Payment</option>
-            </select>
+  className="pl-4 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer hover:border-indigo-500"
+  value={sortBy}
+  onChange={(e) => setSortBy(e.target.value as 'date' | 'amount' | 'payment')}
+>
+  <option value="date">Sort by Date</option>
+  <option value="amount">Sort by Amount</option>
+  <option value="payment">Sort by Payment</option>
+</select>
 
-            <select
-              className="p-2 border border-gray-200 rounded-lg"
-              value={amountFilter}
-              onChange={(e) => setAmountFilter(e.target.value)}
-            >
-              <option value="all">All Amounts</option>
-              <option value="10">Up to $10K</option>
-              <option value="20">Up to $20K</option>
-              <option value="30">Up to $30K</option>
-              <option value="40">Up to $40K</option>
-              <option value="50">Up to $50K</option>
-            </select>
+<select
+  className="pl-4 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer hover:border-indigo-500"
+  value={amountFilter}
+  onChange={(e) => setAmountFilter(e.target.value)}
+>
+  <option value="all">All Amounts</option>
+  <option value="10">Up to $10K</option>
+  <option value="20">Up to $20K</option>
+  <option value="30">Up to $30K</option>
+  <option value="40">Up to $40K</option>
+  <option value="50">Up to $50K</option>
+</select>
 
-            <select
-              className="p-2 border border-gray-200 rounded-lg"
-              value={paymentFilter}
-              onChange={(e) => setPaymentFilter(e.target.value)}
-            >
-              <option value="all">All Payment Methods</option>
-              <option value="Card">Card</option>
-              <option value="Bank Transfer">Bank Transfer</option>
-            </select>
+<select
+  className="pl-4 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer hover:border-indigo-500"
+  value={paymentFilter}
+  onChange={(e) => setPaymentFilter(e.target.value)}
+>
+  <option value="all">All Payment Methods</option>
+  <option value="Card">Card</option>
+  <option value="Bank Transfer">Bank Transfer</option>
+  <option value="Cash">Cash</option>
+</select>
           </div>
         </div>
         

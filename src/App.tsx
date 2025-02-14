@@ -8,6 +8,7 @@ import flutterwaveTransactions from './transactions/flutterwave_transactions.jso
 
 // Calculate KPI data from transactions
 const calculateKpiData = (transactions: Transaction[]) => {
+  // add up transactions 
   const totalRevenue = transactions.reduce((sum, t) => sum + t.amount, 0);
   const successfulTransactions = transactions.filter(t => t.status === 'Success');
   const successRate = Math.round((successfulTransactions.length / transactions.length) * 100);

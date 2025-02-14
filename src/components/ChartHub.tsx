@@ -1,5 +1,4 @@
-// Add these date-fns functions at the top
-import { format, subDays, parseISO } from 'date-fns';
+import { format, subDays, parseISO, parse, subWeeks, addDays } from 'date-fns'; // Corrected import
 import React from 'react';
 import {
   Chart as ChartJS,
@@ -13,7 +12,6 @@ import {
 } from 'chart.js';
 import { Bar, Doughnut } from 'react-chartjs-2';
 import { Transaction } from '../types';
-
 
 ChartJS.register(
   CategoryScale,
@@ -31,11 +29,11 @@ interface ChartHubProps {
 
 export function ChartHub({ transactions }: ChartHubProps) {
   // Process data for payment method distribution
-  const paymentMethods = ['Bank Transfer', 'Card', 'Wallet'] as const;
+  const paymentMethods = ['Bank Transfer', 'Card', 'Cash'] as const;
   const paymentMethodCounts = paymentMethods.map(method =>
     transactions.filter(t => t.payment_method === method).length
   );
-// new variables 
+  // new variables
   const transactionDates = transactions.map(t => parseISO(t.date).getTime());
   const newestDate = new Date(Math.max(...transactionDates));
 
@@ -45,43 +43,52 @@ export function ChartHub({ transactions }: ChartHubProps) {
       data: paymentMethodCounts,
       backgroundColor: [
         'rgba(99, 102, 241, 0.8)',
-        'rgba(16, 185, 129, 0.8)',
-        'rgba(251, 191, 36, 0.8)',
+        'rgba(240, 150, 230, 0.8)',
+        'rgba(170, 230, 90, 0.8)',
       ],
       borderColor: [
         'rgb(99, 102, 241)',
-        'rgb(16, 185, 129)',
-        'rgb(251, 191, 36)',
+        'rgb(240, 150, 230)',
+        'rgb(170, 230, 90)',
       ],
       borderWidth: 1,
     }],
   };
 
   // Process data for volume timeline
-  const last7Days = Array.from({ length: 7 }, (_, i) => {
-    const date = subDays(newestDate, i); // Changed from new Date() to newestDate
-    return format(date, 'MMM dd');
+
+  const last7Weeks = Array.from({ length: 7 }, (_, i) => { // Declared first now
+    // Use subWeeks instead of subDays
+    const date = subWeeks(newestDate, i);
+    // Format as week range (e.g., "Jul 14 - Jul 20")
+    const startDateOfWeek = date;
+    const endDateOfWeek = addDays(startDateOfWeek, 6); // Assuming week is 7 days
+    const startFormat = format(startDateOfWeek, 'MMM dd');
+    const endFormat = format(endDateOfWeek, 'MMM dd');
+    return `${startFormat} - ${endFormat}`;
   }).reverse();
 
-  const dailyVolumes = last7Days.map(day => {
-    const dayTransactions = transactions.filter(t => {
-      const transactionDate = format(parseISO(t.date), 'MMM dd');
-      return transactionDate === day;
-    });
-    return dayTransactions.reduce((sum, t) => sum + t.amount, 0);
-  });
+  const weeklyVolumes = last7Weeks.map(weekRange => { // Declared second now
+    // 1. Extract Start and End Dates from weekRange label
+    const [startLabel, endLabel] = weekRange.split(' - ');
+    const startDate = parse(startLabel, 'MMM dd', newestDate);
+    const endDate = parse(endLabel, 'MMM dd', newestDate);
 
-  console.log('Processed dates:', {
-    newestDate,
-    last7Days,
-    dailyVolumes
+    // 2. Filter Transactions for the Week Range
+    const weekTransactions = transactions.filter(t => {
+      const transactionDate = parseISO(t.date);
+      return transactionDate >= startDate && transactionDate <= endDate;
+    });
+
+    // 3. Sum Weekly Transaction Amounts
+    return weekTransactions.reduce((sum, t) => sum + t.amount, 0);
   });
 
   const volumeData = {
-    labels: last7Days,
+    labels: last7Weeks,
     datasets: [{
-      label: 'Transaction Volume (Millions)', // Changed label
-      data: dailyVolumes,
+      label: 'Transaction Volume (Millions)',
+      data: weeklyVolumes,
       backgroundColor: 'rgba(99, 102, 241, 0.5)',
       borderColor: 'rgb(99, 102, 241)',
       borderWidth: 1,
@@ -92,7 +99,7 @@ export function ChartHub({ transactions }: ChartHubProps) {
     maintainAspectRatio: false,
     responsive: true,
     plugins: {
-      legend: { 
+      legend: {
         position: 'top' as const,
         labels: {
           padding: 20,
@@ -105,7 +112,7 @@ export function ChartHub({ transactions }: ChartHubProps) {
           label: (context) => {
             if (context.dataset.label?.includes('Volume')) {
               const value = context.parsed.y || 0;
-              return ` $${(value / 1000).toFixed(1)}K`; // Changed to thousands
+              return ` $${(value / 1000).toFixed(1)}K`;
             } else {
               return ` ${context.raw} transactions`;
             }
@@ -124,9 +131,9 @@ export function ChartHub({ transactions }: ChartHubProps) {
         beginAtZero: true,
         ticks: {
           color: '#6B7280',
-          callback: (value) => `$${(value/1000).toFixed(1)}K`
+          callback: (value) => `$${(value / 1000).toFixed(1)}K`
         },
-        max: Math.ceil(Math.max(...dailyVolumes) * 1.2) // Added comma, removed division
+        max: Math.ceil(Math.max(...weeklyVolumes) * 1.2) // Corrected: Use weeklyVolumes here
       },
       x: {
         grid: { display: false },

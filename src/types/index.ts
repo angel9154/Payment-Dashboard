@@ -3,7 +3,7 @@ export interface Transaction {
   customer_name: string;
   amount: number;
   status: 'Success' | 'Failed' | 'Pending';
-  payment_method: 'Bank Transfer' | 'Card' | 'Wallet';
+  payment_method: 'Bank Transfer' | 'Card' | 'Cash';
   date: string;
 }
 
