@@ -10,13 +10,36 @@ interface TransactionTableProps {
 export function TransactionTable({ transactions }: TransactionTableProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
+  const [sortBy, setSortBy] = useState<'date' | 'amount' | 'payment'>('date');
+  const [amountFilter, setAmountFilter] = useState<string>('all');
+  const [paymentFilter, setPaymentFilter] = useState<string>('all');
   const itemsPerPage = 25;
 
-  const filteredTransactions = transactions.filter(
-    transaction =>
-      transaction.transaction_id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      transaction.customer_name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredTransactions = transactions
+    .filter(transaction => {
+      const matchesSearch = transaction.transaction_id.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        transaction.customer_name.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      const matchesAmount = amountFilter === 'all' ? true :
+        transaction.amount <= parseInt(amountFilter) * 1000;
+      
+      const matchesPayment = paymentFilter === 'all' ? true :
+        transaction.payment_method === paymentFilter;
+
+      return matchesSearch && matchesAmount && matchesPayment;
+    })
+    .sort((a, b) => {
+      switch (sortBy) {
+        case 'date':
+          return new Date(b.date).getTime() - new Date(a.date).getTime();
+        case 'amount':
+          return b.amount - a.amount;
+        case 'payment':
+          return a.payment_method.localeCompare(b.payment_method);
+        default:
+          return 0;
+      }
+    });
 
   const pageCount = Math.ceil(filteredTransactions.length / itemsPerPage);
   const paginatedTransactions = filteredTransactions.slice(
@@ -40,17 +63,53 @@ export function TransactionTable({ transactions }: TransactionTableProps) {
       <div className="p-6 border-b border-gray-100">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-lg font-semibold">Recent Transactions</h3>
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-            <input
-              type="text"
-              placeholder="Search transactions..."
-              className="pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
+          <div className="flex items-center gap-2">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <input
+                type="text"
+                placeholder="Search transactions..."
+                className="pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+            
+            <select
+              className="p-2 border border-gray-200 rounded-lg"
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as 'date' | 'amount' | 'payment')}
+            >
+              <option value="date">Sort by Date</option>
+              <option value="amount">Sort by Amount</option>
+              <option value="payment">Sort by Payment</option>
+            </select>
+
+            <select
+              className="p-2 border border-gray-200 rounded-lg"
+              value={amountFilter}
+              onChange={(e) => setAmountFilter(e.target.value)}
+            >
+              <option value="all">All Amounts</option>
+              <option value="10">Up to $10K</option>
+              <option value="20">Up to $20K</option>
+              <option value="30">Up to $30K</option>
+              <option value="40">Up to $40K</option>
+              <option value="50">Up to $50K</option>
+            </select>
+
+            <select
+              className="p-2 border border-gray-200 rounded-lg"
+              value={paymentFilter}
+              onChange={(e) => setPaymentFilter(e.target.value)}
+            >
+              <option value="all">All Payment Methods</option>
+              <option value="Card">Card</option>
+              <option value="Bank Transfer">Bank Transfer</option>
+            </select>
           </div>
         </div>
+        
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
@@ -94,6 +153,7 @@ export function TransactionTable({ transactions }: TransactionTableProps) {
             </tbody>
           </table>
         </div>
+        
         {pageCount > 1 && (
           <div className="flex items-center justify-between px-6 py-4 border-t border-gray-100">
             <button
