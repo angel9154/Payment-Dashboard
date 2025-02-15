@@ -1,50 +1,26 @@
 # Payment Dashboard Documentation
 
-Welcome to the **Payment Dashboard**, a centralized platform for monitoring payment transactions, analyzing financial metrics, and visualizing payment patterns. This dashboard is built with React to leverage component reusability, efficient state management, and a rich ecosystem for data visualization.
+Welcome to the **Payment Dashboard** – your centralized platform for monitoring payment transactions, analyzing financial metrics, and visualizing payment patterns. This dashboard leverages the power of React for modularity, performance, and a vibrant ecosystem of data visualization tools.
 
 ---
 
-## Table of Contents
+## 🔍 Overview
 
-- [Purpose](#purpose)
-- [Why React?](#why-react)
-- [Component Architecture](#component-architecture)
-- [Component Breakdown](#component-breakdown)
-  - [TransactionTable.tsx](#transactiontabletsx)
-  - [ChartHub.tsx](#charthubtsx)
-  - [App.tsx](#apptsx)
-  - [KpiHeader.tsx](#kpiheadertsx)
-- [Quick Start](#quick-start)
-- [Configuration & Data Requirements](#configuration--data-requirements)
-- [Common Errors & Gotchas](#common-errors--gotchas)
-- [API Documentation](#api-documentation)
-- [Maintainers & Update Process](#maintainers--update-process)
-- [Architectural Decision Record (ADR)](#architectural-decision-record-adr)
+### **Purpose**
+- **Centralized Monitoring:** Keep track of all payment transactions in real-time.
+- **Financial Insights:** Analyze key metrics such as total revenue, transaction count, and success rate.
+- **Data Visualization:** Explore interactive charts that reveal weekly trends and payment distributions.
+
+### **Why React?**
+- **Component Reusability:** Build and maintain a modular codebase with reusable UI components.
+- **Efficient State Management:** Simplify complex state interactions.
+- **Rich Ecosystem:** Utilize libraries like `react-chartjs-2` for charting and `date-fns` for date manipulation, among others.
 
 ---
 
-## Purpose
+## 🧩 Component Architecture
 
-The **Payment Dashboard** solves the problem of decentralized monitoring and analysis of payment transactions by providing a unified view to:
-
-- Monitor payment transactions in real-time
-- Analyze key financial metrics
-- Visualize payment patterns and trends over time
-
----
-
-## Why React?
-
-React was chosen as the core framework due to:
-- **Component Reusability:** Simplifies UI development by breaking the dashboard into manageable pieces.
-- **State Management Efficiency:** Handles complex state interactions seamlessly.
-- **Rich Ecosystem:** Supports numerous libraries for data visualization and interactivity.
-
----
-
-## Component Architecture
-
-Below is an overview of the component structure, represented using a Mermaid diagram:
+The Payment Dashboard is structured into several interconnected components. Here's a visual representation using a Mermaid diagram:
 
 ```mermaid
 graph TD
